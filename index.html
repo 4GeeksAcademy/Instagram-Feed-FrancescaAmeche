@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/fea7ed6e9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+
   <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -17,7 +17,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Caption:</p>
+          <form>
+            <div class="form-group">
+              <label for="caption" class="col-form-label"><strong>Caption:</strong></label>
+              <input type="text" class="form-control pb-5" id="caption" placeholder="Add the caption of your post here">
+            </div>
+          </form>
+          <div class="mb-3">
+            <button type="button" class="btn btn-outline-secondary mt-3 ps-3 pe-3"><i class="fa-solid fa-camera"></i></button>
+            <button type="button" class="btn btn-outline-secondary mt-3 ps-3 pe-3"><i class="fa-solid fa-location-dot"></i></button>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -30,7 +39,7 @@
     <div class="container-fluid"> 
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand col-10" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a class="navbar-brand col-10 ms-2" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Create a new post</button>
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle ms-5 me-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
