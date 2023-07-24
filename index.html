@@ -8,65 +8,87 @@
     <script src="https://kit.fontawesome.com/fea7ed6e9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand col-10" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-              <button class="btn btn-success" type="submit">Create a new post</button>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dropdown-menu-end dropdown-menu-lg-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="row">
-            <div class="col-6 d-flex justify-content-end mt-3">
-                <i class="fa-solid fa-table-cells"></i>
-            </div>
-            <div class="col-6 d-flex justify-content-start mt-3">
-                <i class="fa-solid fa-square"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-            <div class="col-4 justify-content-center mt-3">
-                <img src="https://picsum.photos/600">
-            </div>
-          </div>
+  
+  <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Caption:</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-fluid"> 
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand col-10" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Create a new post</button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle ms-5 me-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu me-5">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-6 d-flex justify-content-end mt-3">
+          <a href="index.html"><i class="fa-solid fa-table-cells"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-start mt-3">
+          <a href="index2.html"><i class="fa-solid fa-square"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/17/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/16/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/724/600">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/152/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/70/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/559/600">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/83/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/730/600">
+        </div>
+        <div class="col-4 justify-content-center mt-3">
+          <img src="https://picsum.photos/id/93/600">
+        </div>
+      </div>
     </div>
 
 
